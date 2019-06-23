@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.c ../drivers/LSM6DS3x/lsm6ds3x.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c ../../drivers/lsm6ds3x/lsm6ds3x.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o
 
 # Source Files
-SOURCEFILES=main.c ../drivers/LSM6DS3x/lsm6ds3x.c
+SOURCEFILES=main.c ../../drivers/lsm6ds3x/lsm6ds3x.c
 
 
 CFLAGS=
@@ -110,26 +110,26 @@ ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../drivers/LSM6DS3x" -O1 -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../../drivers/lsm6ds3x" -O1 -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o: ../drivers/LSM6DS3x/lsm6ds3x.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1685489289" 
-	@${RM} ${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../drivers/LSM6DS3x" -O1 -MMD -MF "${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o.d" -o ${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o ../drivers/LSM6DS3x/lsm6ds3x.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o: ../../drivers/lsm6ds3x/lsm6ds3x.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1633326728" 
+	@${RM} ${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../../drivers/lsm6ds3x" -O1 -MMD -MF "${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o.d" -o ${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o ../../drivers/lsm6ds3x/lsm6ds3x.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 else
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../drivers/LSM6DS3x" -O1 -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../../drivers/lsm6ds3x" -O1 -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o: ../drivers/LSM6DS3x/lsm6ds3x.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1685489289" 
-	@${RM} ${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../drivers/LSM6DS3x" -O1 -MMD -MF "${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o.d" -o ${OBJECTDIR}/_ext/1685489289/lsm6ds3x.o ../drivers/LSM6DS3x/lsm6ds3x.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o: ../../drivers/lsm6ds3x/lsm6ds3x.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1633326728" 
+	@${RM} ${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../../drivers/lsm6ds3x" -O1 -MMD -MF "${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o.d" -o ${OBJECTDIR}/_ext/1633326728/lsm6ds3x.o ../../drivers/lsm6ds3x/lsm6ds3x.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 endif
 
@@ -165,11 +165,3 @@ endif
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r build/default
 	${RM} -r dist/default
-
-# Enable dependency checking
-.dep.inc: .depcheck-impl
-
-DEPFILES=$(shell mplabwildcard ${POSSIBLE_DEPFILES})
-ifneq (${DEPFILES},)
-include ${DEPFILES}
-endif
