@@ -1,0 +1,646 @@
+EESchema Schematic File Version 4
+LIBS:FencingAnalyzer-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Wireless Inertial Module for Fencing"
+Date "2017-07-18"
+Rev "2"
+Comp "David Rice"
+Comment1 "from a fencing blade to a computer for analysis"
+Comment2 "A system for wirelessly transmitting inertial module sensor data"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FencingAnalyzer-rescue:HC-06 RF1
+U 1 1 5946C04E
+P 7300 1650
+F 0 "RF1" H 7300 800 60  0000 C CNN
+F 1 "HC-06" H 7300 1650 60  0000 C CNN
+F 2 "DavidsMakerWorks_Custom:HC-06_SMD_Module" H 7300 1650 60  0001 C CNN
+F 3 "" H 7300 1650 60  0001 C CNN
+	1    7300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:TPS6122x U1
+U 1 1 5946C093
+P 3850 1500
+F 0 "U1" H 4100 1150 60  0000 C CNN
+F 1 "TPS61221" H 3850 1800 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-363_SC-70-6" H 3850 1500 60  0001 C CNN
+F 3 "" H 3850 1500 60  0001 C CNN
+	1    3850 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:C C2
+U 1 1 5946C0B2
+P 4700 1750
+F 0 "C2" H 4725 1850 50  0000 L CNN
+F 1 "10uF" H 4725 1650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4738 1600 50  0001 C CNN
+F 3 "" H 4700 1750 50  0001 C CNN
+	1    4700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:C C1
+U 1 1 5946C140
+P 2250 1750
+F 0 "C1" H 2275 1850 50  0000 L CNN
+F 1 "10uF" H 2275 1650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2288 1600 50  0001 C CNN
+F 3 "" H 2250 1750 50  0001 C CNN
+	1    2250 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:PIC32MM0064GPL028-I_ML IC1
+U 1 1 5946C88A
+P 5250 4600
+F 0 "IC1" H 5250 3000 60  0000 C CNN
+F 1 "PIC32MM0064GPL028-I/ML" V 4950 4600 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-28-1EP_6x6mm_Pitch0.65mm" H 5250 4150 60  0001 C CNN
+F 3 "" H 5250 4150 60  0001 C CNN
+	1    5250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:LSM6DS33 IC2
+U 1 1 5946C986
+P 8800 4850
+F 0 "IC2" H 8800 4150 60  0000 C CNN
+F 1 "LSM6DS33" H 8800 5050 60  0000 C CNN
+F 2 "DavidsMakerWorks_Custom:LGA-16-3x3" H 8800 4850 60  0001 C CNN
+F 3 "" H 8800 4850 60  0001 C CNN
+	1    8800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:C C8
+U 1 1 5946CA45
+P 7800 4900
+F 0 "C8" H 7825 5000 50  0000 L CNN
+F 1 "0.1uF" H 7825 4800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7838 4750 50  0001 C CNN
+F 3 "" H 7800 4900 50  0001 C CNN
+	1    7800 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:C C5
+U 1 1 5946CB2C
+P 2750 4650
+F 0 "C5" H 2775 4750 50  0000 L CNN
+F 1 "0.1uF" H 2775 4550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2788 4500 50  0001 C CNN
+F 3 "" H 2750 4650 50  0001 C CNN
+	1    2750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:C C7
+U 1 1 5946CB62
+P 7500 4900
+F 0 "C7" H 7525 5000 50  0000 L CNN
+F 1 "0.1uF" H 7525 4800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7538 4750 50  0001 C CNN
+F 3 "" H 7500 4900 50  0001 C CNN
+	1    7500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:C C4
+U 1 1 5946CB97
+P 3600 4650
+F 0 "C4" H 3625 4750 50  0000 L CNN
+F 1 "0.1uF" H 3625 4550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3638 4500 50  0001 C CNN
+F 3 "" H 3600 4650 50  0001 C CNN
+	1    3600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:C C3
+U 1 1 5946CBCF
+P 3250 4650
+F 0 "C3" H 3275 4750 50  0000 L CNN
+F 1 "0.1uF" H 3275 4550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3288 4500 50  0001 C CNN
+F 3 "" H 3250 4650 50  0001 C CNN
+	1    3250 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:C C6
+U 1 1 5946CEDA
+P 3900 5600
+F 0 "C6" H 3925 5700 50  0000 L CNN
+F 1 "10uF" H 3925 5500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3938 5450 50  0001 C CNN
+F 3 "" H 3900 5600 50  0001 C CNN
+	1    3900 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:Battery_Cell BT1
+U 1 1 5946D179
+P 1000 1800
+F 0 "BT1" H 1100 1900 50  0000 L CNN
+F 1 "AA" H 1100 1800 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" V 1000 1860 50  0001 C CNN
+F 3 "" V 1000 1860 50  0001 C CNN
+	1    1000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:L L1
+U 1 1 5946DA60
+P 2750 1450
+F 0 "L1" V 2700 1450 50  0000 C CNN
+F 1 "4.7uH" V 2825 1450 50  0000 C CNN
+F 2 "DavidsMakerWorks_Custom:LQH3NP" H 2750 1450 50  0001 C CNN
+F 3 "" H 2750 1450 50  0001 C CNN
+	1    2750 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1000 1100 1000 1600
+Wire Wire Line
+	1000 2050 2250 2050
+Wire Wire Line
+	1000 1900 1000 2050
+$Comp
+L FencingAnalyzer-rescue:GND #PWR01
+U 1 1 5946F3A0
+P 1000 2300
+F 0 "#PWR01" H 1000 2050 50  0001 C CNN
+F 1 "GND" H 1000 2150 50  0000 C CNN
+F 2 "" H 1000 2300 50  0001 C CNN
+F 3 "" H 1000 2300 50  0001 C CNN
+	1    1000 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 1000 2050
+Wire Wire Line
+	2250 1200 2250 1250
+Wire Wire Line
+	2250 2050 2250 1900
+Connection ~ 2250 1450
+Wire Wire Line
+	2900 1450 3350 1450
+Wire Wire Line
+	2250 1250 3250 1250
+Wire Wire Line
+	3250 1250 3250 1350
+Wire Wire Line
+	3250 1350 3350 1350
+Wire Wire Line
+	2400 1600 3350 1600
+Wire Wire Line
+	2400 1600 2400 1450
+Connection ~ 2400 1450
+$Comp
+L FencingAnalyzer-rescue:GND #PWR02
+U 1 1 5946F5C3
+P 3850 2300
+F 0 "#PWR02" H 3850 2050 50  0001 C CNN
+F 1 "GND" H 3850 2150 50  0000 C CNN
+F 2 "" H 3850 2300 50  0001 C CNN
+F 3 "" H 3850 2300 50  0001 C CNN
+	1    3850 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1950 3850 2300
+Wire Wire Line
+	4350 1600 4500 1600
+Wire Wire Line
+	4500 1600 4500 1350
+Wire Wire Line
+	4500 1350 4350 1350
+Connection ~ 4500 1600
+$Comp
+L FencingAnalyzer-rescue:GND #PWR03
+U 1 1 5946F66F
+P 4700 2300
+F 0 "#PWR03" H 4700 2050 50  0001 C CNN
+F 1 "GND" H 4700 2150 50  0000 C CNN
+F 2 "" H 4700 2300 50  0001 C CNN
+F 3 "" H 4700 2300 50  0001 C CNN
+	1    4700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1900 4700 2300
+$Comp
+L FencingAnalyzer-rescue:+3.3V #PWR04
+U 1 1 5946F80E
+P 4700 1100
+F 0 "#PWR04" H 4700 950 50  0001 C CNN
+F 1 "+3.3V" H 4700 1240 50  0000 C CNN
+F 2 "" H 4700 1100 50  0001 C CNN
+F 3 "" H 4700 1100 50  0001 C CNN
+	1    4700 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1600 4700 1100
+Wire Wire Line
+	4250 5350 3900 5350
+Wire Wire Line
+	3900 5350 3900 5450
+Wire Wire Line
+	4250 5650 4150 5650
+Wire Wire Line
+	4150 5650 4150 5850
+Wire Wire Line
+	2750 5850 3250 5850
+Wire Wire Line
+	3900 5750 3900 5850
+Connection ~ 4150 5850
+$Comp
+L FencingAnalyzer-rescue:GND #PWR05
+U 1 1 5946FDE0
+P 4150 6350
+F 0 "#PWR05" H 4150 6100 50  0001 C CNN
+F 1 "GND" H 4150 6200 50  0000 C CNN
+F 2 "" H 4150 6350 50  0001 C CNN
+F 3 "" H 4150 6350 50  0001 C CNN
+	1    4150 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3550 4250 3550
+Wire Wire Line
+	3600 3000 3600 3350
+Wire Wire Line
+	3600 4800 3600 5850
+Connection ~ 3900 5850
+Wire Wire Line
+	2750 3350 3250 3350
+Wire Wire Line
+	3250 3350 3250 4500
+Wire Wire Line
+	3250 4800 3250 5850
+Connection ~ 3600 5850
+Connection ~ 3600 3350
+Connection ~ 3600 3550
+$Comp
+L FencingAnalyzer-rescue:+3.3V #PWR06
+U 1 1 59470822
+P 3600 3000
+F 0 "#PWR06" H 3600 2850 50  0001 C CNN
+F 1 "+3.3V" H 3600 3140 50  0000 C CNN
+F 2 "" H 3600 3000 50  0001 C CNN
+F 3 "" H 3600 3000 50  0001 C CNN
+	1    3600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 4750 8100 4750
+Wire Wire Line
+	8100 4750 8100 4850
+Wire Wire Line
+	8100 4850 8200 4850
+Wire Wire Line
+	8100 4950 8200 4950
+Connection ~ 8100 4850
+Wire Wire Line
+	8100 5050 8200 5050
+Connection ~ 8100 4950
+Wire Wire Line
+	8100 5150 8200 5150
+Connection ~ 8100 5050
+Wire Wire Line
+	8100 5250 8200 5250
+Connection ~ 8100 5150
+Wire Wire Line
+	7500 5350 7800 5350
+Connection ~ 8100 5250
+$Comp
+L FencingAnalyzer-rescue:GND #PWR07
+U 1 1 59471089
+P 8100 5600
+F 0 "#PWR07" H 8100 5350 50  0001 C CNN
+F 1 "GND" H 8100 5450 50  0000 C CNN
+F 2 "" H 8100 5600 50  0001 C CNN
+F 3 "" H 8100 5600 50  0001 C CNN
+	1    8100 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 8100 5350
+Wire Wire Line
+	7800 4450 8100 4450
+Wire Wire Line
+	7800 4450 7800 4750
+Wire Wire Line
+	7800 5050 7800 5350
+Wire Wire Line
+	7500 4350 8100 4350
+Wire Wire Line
+	7500 4350 7500 4750
+Wire Wire Line
+	7500 5050 7500 5350
+Connection ~ 7800 5350
+$Comp
+L FencingAnalyzer-rescue:+3.3V #PWR08
+U 1 1 594718D7
+P 8100 4000
+F 0 "#PWR08" H 8100 3850 50  0001 C CNN
+F 1 "+3.3V" H 8100 4140 50  0000 C CNN
+F 2 "" H 8100 4000 50  0001 C CNN
+F 3 "" H 8100 4000 50  0001 C CNN
+	1    8100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:R R2
+U 1 1 594729B5
+P 3900 3850
+F 0 "R2" V 3980 3850 50  0000 C CNN
+F 1 "470" V 3900 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3830 3850 50  0001 C CNN
+F 3 "" H 3900 3850 50  0001 C CNN
+	1    3900 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:R R1
+U 1 1 594729F2
+P 2750 3600
+F 0 "R1" V 2830 3600 50  0000 C CNN
+F 1 "10K" V 2750 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2680 3600 50  0001 C CNN
+F 3 "" H 2750 3600 50  0001 C CNN
+	1    2750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3450 2750 3350
+Connection ~ 3250 3350
+Wire Wire Line
+	3750 3850 2750 3850
+Wire Wire Line
+	2750 3750 2750 3850
+Connection ~ 2750 3850
+Wire Wire Line
+	4050 3850 4150 3850
+Wire Wire Line
+	2750 4800 2750 5850
+Connection ~ 3250 5850
+Wire Wire Line
+	8100 4000 8100 4350
+Connection ~ 8100 4350
+Connection ~ 8100 4450
+$Comp
+L FencingAnalyzer-rescue:CONN_01X06 J1
+U 1 1 594748F4
+P 8950 3200
+F 0 "J1" H 8950 3550 50  0000 C CNN
+F 1 "ICSP" V 9050 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 8950 3200 50  0001 C CNN
+F 3 "" H 8950 3200 50  0001 C CNN
+	1    8950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:+3.3V #PWR09
+U 1 1 5947498B
+P 8500 2800
+F 0 "#PWR09" H 8500 2650 50  0001 C CNN
+F 1 "+3.3V" H 8500 2940 50  0000 C CNN
+F 2 "" H 8500 2800 50  0001 C CNN
+F 3 "" H 8500 2800 50  0001 C CNN
+	1    8500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:GND #PWR010
+U 1 1 594749CC
+P 8500 3600
+F 0 "#PWR010" H 8500 3350 50  0001 C CNN
+F 1 "GND" H 8500 3450 50  0000 C CNN
+F 2 "" H 8500 3600 50  0001 C CNN
+F 3 "" H 8500 3600 50  0001 C CNN
+	1    8500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3850 4150 2950
+Wire Wire Line
+	4150 2950 8750 2950
+Connection ~ 4150 3850
+Wire Wire Line
+	8750 3050 8500 3050
+Wire Wire Line
+	8500 3050 8500 2800
+Wire Wire Line
+	8750 3150 8500 3150
+Wire Wire Line
+	8500 3150 8500 3600
+Wire Wire Line
+	8750 3250 6550 3250
+Wire Wire Line
+	6550 3250 6550 4050
+Wire Wire Line
+	6550 4050 6250 4050
+Wire Wire Line
+	6250 4150 6650 4150
+Wire Wire Line
+	6650 4150 6650 3350
+Wire Wire Line
+	6650 3350 8750 3350
+Wire Wire Line
+	6250 5550 7250 5550
+Wire Wire Line
+	7250 5550 7250 6400
+Wire Wire Line
+	7250 6400 10350 6400
+Wire Wire Line
+	10350 6400 10350 4350
+Wire Wire Line
+	10350 4350 9400 4350
+Wire Wire Line
+	9400 4450 10250 4450
+Wire Wire Line
+	10250 4450 10250 6300
+Wire Wire Line
+	10250 6300 7350 6300
+Wire Wire Line
+	7350 6300 7350 5450
+Wire Wire Line
+	7350 5450 6250 5450
+Wire Wire Line
+	6250 3350 6450 3350
+Wire Wire Line
+	6450 3350 6450 3150
+Wire Wire Line
+	6450 3150 8350 3150
+Wire Wire Line
+	8350 3150 8350 1050
+Wire Wire Line
+	8350 1050 8000 1050
+Wire Wire Line
+	8000 2250 8250 2250
+Wire Wire Line
+	8250 2250 8250 3450
+Wire Wire Line
+	8250 3450 6250 3450
+$Comp
+L FencingAnalyzer-rescue:GND #PWR011
+U 1 1 59474ED7
+P 6500 2500
+F 0 "#PWR011" H 6500 2250 50  0001 C CNN
+F 1 "GND" H 6500 2350 50  0000 C CNN
+F 2 "" H 6500 2500 50  0001 C CNN
+F 3 "" H 6500 2500 50  0001 C CNN
+	1    6500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L FencingAnalyzer-rescue:+3.3V #PWR012
+U 1 1 59474F18
+P 6500 850
+F 0 "#PWR012" H 6500 700 50  0001 C CNN
+F 1 "+3.3V" H 6500 990 50  0000 C CNN
+F 2 "" H 6500 850 50  0001 C CNN
+F 3 "" H 6500 850 50  0001 C CNN
+	1    6500 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 1050 6500 1050
+Wire Wire Line
+	6500 1050 6500 850 
+Wire Wire Line
+	6600 2050 6500 2050
+Wire Wire Line
+	6500 2050 6500 2150
+Wire Wire Line
+	6600 2150 6500 2150
+Connection ~ 6500 2150
+Wire Wire Line
+	6600 2250 6500 2250
+Connection ~ 6500 2250
+Wire Wire Line
+	6250 5050 7150 5050
+Wire Wire Line
+	7150 5050 7150 5850
+Wire Wire Line
+	7150 5850 10150 5850
+Wire Wire Line
+	10150 5850 10150 5050
+Wire Wire Line
+	10150 5050 9400 5050
+Wire Wire Line
+	9400 5150 10050 5150
+Wire Wire Line
+	10050 5150 10050 5950
+Wire Wire Line
+	10050 5950 7050 5950
+Wire Wire Line
+	7050 5950 7050 5150
+Wire Wire Line
+	7050 5150 6250 5150
+Wire Wire Line
+	6250 5250 6950 5250
+Wire Wire Line
+	6950 5250 6950 6050
+Wire Wire Line
+	6950 6050 9950 6050
+Wire Wire Line
+	9950 6050 9950 5250
+Wire Wire Line
+	9950 5250 9400 5250
+Wire Wire Line
+	9400 5350 9850 5350
+Wire Wire Line
+	9850 5350 9850 6150
+Wire Wire Line
+	9850 6150 6850 6150
+Wire Wire Line
+	6850 6150 6850 5350
+Wire Wire Line
+	6850 5350 6250 5350
+$Comp
+L FencingAnalyzer-rescue:SW_SPDT SW1
+U 1 1 594C2B9D
+P 1350 1100
+F 0 "SW1" H 1350 1270 50  0000 C CNN
+F 1 "SW_SPDT" H 1350 900 50  0000 C CNN
+F 2 "DavidsMakerWorks_Custom:6-pin_SMD_Switch" H 1350 1100 50  0001 C CNN
+F 3 "" H 1350 1100 50  0001 C CNN
+	1    1350 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1100 1150 1100
+Wire Wire Line
+	1550 1200 2250 1200
+Wire Wire Line
+	2250 1450 2400 1450
+Connection ~ 2250 1250
+Wire Wire Line
+	1000 2050 1000 2300
+Wire Wire Line
+	2250 1450 2250 1600
+Wire Wire Line
+	2400 1450 2600 1450
+Wire Wire Line
+	4500 1600 4700 1600
+Wire Wire Line
+	4150 5850 4150 6350
+Wire Wire Line
+	4150 5850 4250 5850
+Wire Wire Line
+	3900 5850 4150 5850
+Wire Wire Line
+	3600 5850 3900 5850
+Wire Wire Line
+	3600 3350 3600 3550
+Wire Wire Line
+	3600 3350 4250 3350
+Wire Wire Line
+	3600 3550 3600 4500
+Wire Wire Line
+	8100 4850 8100 4950
+Wire Wire Line
+	8100 4950 8100 5050
+Wire Wire Line
+	8100 5050 8100 5150
+Wire Wire Line
+	8100 5150 8100 5250
+Wire Wire Line
+	8100 5250 8100 5350
+Wire Wire Line
+	8100 5350 8200 5350
+Wire Wire Line
+	8100 5350 8100 5600
+Wire Wire Line
+	7800 5350 8100 5350
+Wire Wire Line
+	3250 3350 3600 3350
+Wire Wire Line
+	2750 3850 2750 4500
+Wire Wire Line
+	3250 5850 3600 5850
+Wire Wire Line
+	8100 4350 8200 4350
+Wire Wire Line
+	8100 4350 8100 4450
+Wire Wire Line
+	8100 4450 8200 4450
+Wire Wire Line
+	4150 3850 4250 3850
+Wire Wire Line
+	6500 2150 6500 2250
+Wire Wire Line
+	6500 2250 6500 2500
+Wire Wire Line
+	2250 1250 2250 1450
+$EndSCHEMATC
