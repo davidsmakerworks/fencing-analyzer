@@ -1,4 +1,4 @@
 (sym_lib_table
   (lib (name FencingAnalyzer-rescue)(type Legacy)(uri ${KIPRJMOD}/FencingAnalyzer-rescue.lib)(options "")(descr ""))
-  (lib (name DavidsMakerWorks_Custom)(type Legacy)(uri ../../kicad-libraries/DavidsMakerWorks_Custom.lib)(options "")(descr ""))
+  (lib (name DavidsMakerWorks_Custom)(type Legacy)(uri ${KIPRJMOD}/../../kicad-libraries/DavidsMakerWorks_Custom.lib)(options "")(descr ""))
 )
