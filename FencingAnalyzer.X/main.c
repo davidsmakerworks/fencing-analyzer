@@ -164,7 +164,7 @@ void run_config_menu(CONFIG_DATA *config) {
     printf("| WIRELESS FENCING ACTION ANALYZER |\r\n");
     printf("|   Designed and implemented by    |\r\n");
     printf("|            David Rice            |\r\n");
-    printf("|   Phoenix Falcons Fencing Club   |\r\n");
+    printf("|        David's Makerworks        |\r\n");
     printf("+----------------------------------+\r\n");
     printf("\r\n");
     printf("CPU: PIC32MM0064GPL028\r\n");
